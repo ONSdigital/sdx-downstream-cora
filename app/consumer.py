@@ -2,9 +2,15 @@ from app.settings import logger
 from app.async_consumer import AsyncConsumer
 from app.helpers.request_helper import get_doc_from_store
 from app.processors.cora_processor import CoraProcessor
+from app import settings
+from app.helpers.sdxftp import SDXFTP
 
 
 class Consumer(AsyncConsumer):
+
+    def __init__(self):
+        self._ftp = SDXFTP(logger, settings.FTP_HOST, settings.FTP_USER, settings.FTP_PASS)
+        super(Consumer, self).__init__()
 
     def on_message(self, unused_channel, basic_deliver, properties, body):
         logger.info("Received message", queue=self.QUEUE, delivery_tag=basic_deliver.delivery_tag, app_id=properties.app_id)
@@ -13,7 +19,7 @@ class Consumer(AsyncConsumer):
             mongo_id = body.decode("utf-8")
             document = get_doc_from_store(mongo_id)
 
-            processor = CoraProcessor(logger, document)
+            processor = CoraProcessor(logger, document, self._ftp)
 
             processed_ok = processor.process()
             if processed_ok:
