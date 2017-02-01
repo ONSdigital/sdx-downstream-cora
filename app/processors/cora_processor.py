@@ -4,11 +4,12 @@ from app.helpers.request_helper import remote_call, response_ok, get_sequence_no
 
 class CoraProcessor(object):
 
-    def __init__(self, logger, survey):
+    def __init__(self, logger, survey, ftpconn):
         self.logger = logger
         self.survey = survey
         self.tx_id = None
         self.setup_logger()
+        self.ftp = ftpconn
 
     def setup_logger(self):
         if self.survey:
