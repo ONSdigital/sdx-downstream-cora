@@ -38,7 +38,7 @@ class CoraProcessor(object):
         if sequence_no is None:
             raise RetryableError("Failed to get sequence number")
 
-        return "{0}/common-software/{1}".format(settings.SDX_TRANSFORM_CORA_URL, sequence_no)
+        return "{0}/cora/{1}".format(settings.SDX_TRANSFORM_CORA_URL, sequence_no)
 
     def _transform(self):
         endpoint = self._get_url()
