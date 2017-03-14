@@ -3,16 +3,16 @@ from requests.packages.urllib3.exceptions import MaxRetryError
 from requests.exceptions import ConnectionError
 from app.helpers.exceptions import RetryableError
 
-def url_splitter(url=None):
-    if url is not None: 
 
+def url_splitter(url=None):
+    if url is not None:
         parts = url.split('/')
- 
+
         if 'responses' in parts:
             service = 'responses'
         elif 'sequence' in parts:
             service = 'sequence'
-        else:  
+        else:
             service = None
     else:
         service = None
