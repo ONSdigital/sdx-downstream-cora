@@ -1,3 +1,4 @@
+from app import __version__
 from app.settings import logger
 from app.async_consumer import AsyncConsumer
 from app.helpers.request_helper import get_doc_from_store
@@ -52,11 +53,11 @@ class Consumer(AsyncConsumer):
 
         except (RetryableError, Exception) as e:
             self.nack_message(basic_deliver.delivery_tag, tx_id=processor.tx_id)
-            logger.error("Failed to process", action="nack for", exception=e, delivery_count=delivery_count, tx_id=processor.tx_id)
+            logger.error("Failed to process", action="nack", exception=e, delivery_count=delivery_count, tx_id=processor.tx_id)
 
 
 def main():
-    logger.debug("Starting consumer")
+    logger.info("Starting consumer", version=__version__)
     consumer = Consumer()
     try:
         consumer.run()
