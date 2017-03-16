@@ -1,4 +1,5 @@
 ### Unreleased
+  - Log binary filename before delivery
 
 ### 1.1.0 2017-03-15
   - Fix handling of None responses in remote call
