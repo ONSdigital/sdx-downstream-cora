@@ -2,6 +2,7 @@
   - Log binary filename before delivery
   - Add environment variables to README
   - Remove environment variable defaults
+  - Correct license attribution
 
 ### 1.1.0 2017-03-15
   - Fix handling of None responses in remote call

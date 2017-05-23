@@ -37,3 +37,9 @@ The following envioronment variables can be set:
 | FTP_HEARTBEAT_FOLDER    | `/heartbeat`                          | FTP heartbeat folder
 | RABBIT_QUEUE            | `sdx-cora-survey-notifications`       | Rabbit queue name
 | RABBIT_EXCHANGE         | `message`                             | RabbitMQ exchange to use
+
+### License
+
+Copyright © 2016, Office for National Statistics (https://www.ons.gov.uk)
+
+Released under MIT license, see [LICENSE](LICENSE) for details.
