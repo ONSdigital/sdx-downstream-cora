@@ -6,6 +6,12 @@ from app.processors.cora_processor import CoraProcessor
 from app import settings
 from app.helpers.sdxftp import SDXFTP
 from app.helpers.exceptions import BadMessageError, RetryableError
+import sys
+
+
+def bad_globals(module):
+    g = {k: v for k, v in vars(module).items() if not k.startswith("_") and k.isupper()}
+    return [k for k, v in g.items() if v is None]
 
 
 def get_delivery_count_from_properties(properties):
@@ -73,6 +79,12 @@ class Consumer(AsyncConsumer):
 
 def main():
     logger.info("Starting consumer", version=__version__)
+    bad = bad_globals(settings)
+    for g in bad:
+        logger.error("{0} missing from environment.".format(g))
+    if bad:
+        sys.exit(1)
+
     consumer = Consumer()
     try:
         consumer.run()

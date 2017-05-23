@@ -25,7 +25,7 @@ $ docker build -t sdx-transform-cora
 
 The following envioronment variables can be set:
 
-| Environment Variable    | Default                               | Description
+| Environment Variable    | Example                               | Description
 |-------------------------|---------------------------------------|----------------
 | SDX_STORE_URL           | `http://sdx-store:5000`               | The URL of the `sdx-store` service
 | SDX_TRANSFORM_CORA_URL  | `http://sdx-transform-cora:5000`      | The URL of the `sdx-transform-cora` service
