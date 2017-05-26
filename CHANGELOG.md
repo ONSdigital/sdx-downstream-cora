@@ -2,6 +2,7 @@
   - Log binary filename before delivery
   - Add environment variables to README
   - Correct license attribution
+  - Import async_consumer from sdx-common
 
 ### 1.1.0 2017-03-15
   - Fix handling of None responses in remote call
