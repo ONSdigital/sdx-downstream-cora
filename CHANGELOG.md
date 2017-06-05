@@ -1,6 +1,7 @@
 ### Unreleased
   - Log binary filename before delivery
   - Add environment variables to README
+  - Add codacy badge
   - Correct license attribution
   - Correcting JSON parsing 
 
