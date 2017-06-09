@@ -1,4 +1,6 @@
 ### Unreleased
+  - Timestamp all logs as UTC
+  - Add common library logging configurator
   - Log binary filename before delivery
   - Add environment variables to README
   - Add codacy badge

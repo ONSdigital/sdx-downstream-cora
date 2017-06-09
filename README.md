@@ -10,8 +10,23 @@ SDX Downstream service for processing CORA destined survey data
 
 It's recommended to use ``virtualenv``
 
+If you are building in your local dev environment with a local version of sdx-common, run:
+
 ```shell
-$ make
+$ make dev
+```
+
+Otherwise, run:
+
+```shell
+$ make build
+```
+
+which pulls sdx-common from GitHub as a git submodule and installs it with `pip`.
+
+To run tests, do:
+
+```shell
 $ make test
 ```
 
