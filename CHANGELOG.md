@@ -5,7 +5,8 @@
   - Add environment variables to README
   - Add codacy badge
   - Correct license attribution
-  - Correcting JSON parsing 
+  - Correcting JSON parsing
+  - Add support for codecov to see unit test coverage
 
 ### 1.1.0 2017-03-15
   - Fix handling of None responses in remote call
