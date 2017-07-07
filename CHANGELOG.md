@@ -6,6 +6,7 @@
   - Add codacy badge
   - Correct license attribution
   - Correcting JSON parsing
+  - Add support for codecov to see unit test coverage
   - Update and pin version of sdx-common to 0.7.0 
 
 ### 1.1.0 2017-03-15

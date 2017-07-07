@@ -1,6 +1,6 @@
 # sdx-downstream-cora
 
-[![Build Status](https://travis-ci.org/ONSdigital/sdx-downstream-cora.svg?branch=develop)](https://travis-ci.org/ONSdigital/sdx-downstream-cora) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/89251a554b8141aea14cc28a28fac274)](https://www.codacy.com/app/ons-sdc/sdx-downstream-cora?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ONSdigital/sdx-downstream-cora&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/ONSdigital/sdx-downstream-cora.svg?branch=develop)](https://travis-ci.org/ONSdigital/sdx-downstream-cora) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/89251a554b8141aea14cc28a28fac274)](https://www.codacy.com/app/ons-sdc/sdx-downstream-cora?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ONSdigital/sdx-downstream-cora&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/ONSdigital/sdx-downstream-cora/branch/develop/graph/badge.svg)](https://codecov.io/gh/ONSdigital/sdx-downstream-cora)
 
 SDX Downstream service for processing CORA destined survey data
 
