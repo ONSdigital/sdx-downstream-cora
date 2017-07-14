@@ -1,5 +1,6 @@
 ### Unreleased
   - Remove SDX_HOME use in makefile and add release tag for travis sdx-common git clone
+  - Change all instances of ADD to COPY in Dockerfile
 
 ### 1.2.0 2017-07-10
   - Timestamp all logs as UTC
