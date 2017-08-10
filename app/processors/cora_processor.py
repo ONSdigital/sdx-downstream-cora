@@ -46,7 +46,7 @@ class CoraProcessor(object):
 
         response = remote_call(endpoint, json=self.survey)
 
-        if response_ok(response, endpoint) and response.content is not None:
+        if response_ok(response) and response.content is not None:
             self.logger.info("Successfully transformed")
             return response.content
         else:
