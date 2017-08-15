@@ -13,6 +13,9 @@ structlog==16.1.0 \
 sdx-common==0.7.1 \
     --hash=sha256:8327955891185d310259998c2a36504abc3ad24d3939397645a9df20b27fd4b8 \
     --hash=sha256:1dadd670763e0e4ef622db4a4ad84ed302e57143ebc6543f3e832654c8d8ee4e
+sdc-rabbit==0.3.4 \
+    --hash=sha256:4d0ba9ba0aedd8779de388076eaac961d5ae74a5af3f381f9f8590978988a540 \
+    --hash=sha256:90fecd891fbcc48c5afe3323c5f1056f6313d069c65bdfdc8b6c9c65e4d48f80
 chardet==3.0.4 \
     --hash=sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691 \
     --hash=sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae
