@@ -1,4 +1,5 @@
 ### Unreleased
+  - Add message to README now that this repo is deprecated
 
 ### 1.4.0 2017-09-11
  - Ensure integrity and version of library dependencies
